@@ -18,6 +18,8 @@ def main():
     env = ROOT / "backend/.env"
     env_digest = hashlib.sha256(env.read_bytes()).hexdigest()
     changes = [
+        "Imagem APP VOLTOU A FICAR ONLINE dentro do aviso do aplicativo",
+        "Aviso visual uma vez após confirmar a versão instalada no servidor",
         "Downloads com retomada, cancelamento e mensagens de erro por etapa",
         "Extrator e dependências embarcados com integridade verificada",
         "Recentes na tela inicial, compartilhamento e nova tentativa",

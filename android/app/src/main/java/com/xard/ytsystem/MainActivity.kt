@@ -5,6 +5,7 @@ import com.xard.ytsystem.ui.AppMotion
 import com.xard.ytsystem.security.SafeDiagnostics
 import com.xard.ytsystem.download.TransferErrors
 import com.xard.ytsystem.update.ReleasePolicy
+import com.xard.ytsystem.update.ReleaseAnnouncement
 import com.xard.ytsystem.update.UpdateCheckJob
 import kotlinx.coroutines.Job
 import androidx.recyclerview.widget.SimpleItemAnimator
@@ -1017,6 +1018,9 @@ class MainActivity : AppCompatActivity() {
             com.xard.ytsystem.update.ReleaseNotifier.notify(this, manifest)
             if (manifest.latestVersionCode > BuildConfig.VERSION_CODE) {
                 showUpdateDialog(manifest, ReleasePolicy.required(manifest, BuildConfig.VERSION_CODE))
+            } else if (manifest.latestVersionCode == BuildConfig.VERSION_CODE &&
+                ReleaseAnnouncement.showOnlineIfNeeded(this)) {
+                // The online artwork is shown once, after the server confirms this release.
             } else if (showWhenCurrent) {
                 toast("Você já está usando a versão mais recente.")
             }
@@ -1029,15 +1033,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showUpdateDialog(manifest: AndroidManifest, required: Boolean) {
-        val changes = manifest.changelog.joinToString("\n") { "• $it" }
-            .ifBlank { "Melhorias e correções." }
-        MaterialAlertDialogBuilder(this)
-            .setTitle(if (required) "Atualização necessária" else "Nova atualização disponível")
-            .setMessage("Slucss System ${manifest.latestVersion}\n\n$changes")
-            .setCancelable(!required)
-            .setNegativeButton(if (required) null else "Depois", null)
-            .setPositiveButton("Baixar atualização") { _, _ -> startUpdate(manifest, required) }
-            .show()
+        ReleaseAnnouncement.showUpdate(this, manifest, required) { startUpdate(manifest, required) }
     }
 
     private fun startUpdate(manifest: AndroidManifest, required: Boolean) {
