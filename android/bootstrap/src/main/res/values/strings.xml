@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Instalador Slucss System</string>
+    <string name="product_name">Slucss System</string>
+    <string name="installer_subtitle">Instalador leve</string>
+    <string name="please_wait">Aguarde</string>
+    <string name="checking_latest">Consultando a versão mais recente…</string>
+    <string name="retry">Tentar novamente</string>
+    <string name="correct_version_ready">Slucss System %1$s encontrado para %2$s. Toque abaixo para baixar.</string>
+    <string name="download_correct_version">Baixar versão correta</string>
+    <string name="starting_download">Preparando o download seguro…</string>
+    <string name="downloading_progress">Baixando: %1$d%% — %2$s de %3$s</string>
+    <string name="downloading_unknown_size">Baixando: %1$s</string>
+    <string name="cancel_download">Cancelar download</string>
+    <string name="cancelling_download">Cancelando o download…</string>
+    <string name="verifying_download">Download concluído. Verificando assinatura e segurança…</string>
+    <string name="download_cancelled">Download cancelado. Você pode iniciar novamente.</string>
+    <string name="download_failed">Não foi possível baixar o APK. Confira a internet e tente novamente.</string>
+    <string name="update_ready">Slucss System %1$s foi baixado e verificado. Toque abaixo para continuar.</string>
+    <string name="update_now">Atualizar agora</string>
+    <string name="permission_explanation">Para abrir a atualização, permita a instalação por este app nas configurações do Android.</string>
+    <string name="allow_update">Permitir atualização</string>
+    <string name="opening_installer">Abrindo a confirmação de atualização do Android…</string>
+    <string name="installer_unavailable">O Android não conseguiu abrir a confirmação de atualização.</string>
+    <string name="check_failed">Não foi possível verificar a versão. Confira a internet e tente novamente.</string>
+    <string name="safe_update_notice">Nenhum APK é baixado automaticamente. Após seu toque, o APK é validado por hash, pacote, versão e certificado. A atualização só acontece após a confirmação do Android.</string>
+</resources>

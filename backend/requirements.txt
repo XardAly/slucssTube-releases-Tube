@@ -1,0 +1,17 @@
+# XARD YT SYSTEM — API e gerenciador interno de tarefas
+fastapi==0.139.0
+uvicorn[standard]==0.51.0
+# Implementação WS tolerante a headers não-ASCII do proxy (a padrão crasha)
+wsproto==1.3.2
+pydantic==2.13.4
+pydantic-settings==2.14.2
+sqlalchemy==2.0.51
+psycopg2-binary==2.9.12
+alembic==1.18.5
+PyJWT==2.13.0
+cryptography==49.0.0
+httpx==0.28.1
+# Instrumentação de memória dos logs (video_info, workers):
+psutil==7.2.2
+# Somente o worker privado usa (nunca exposto ao cliente):
+yt-dlp[default]==2026.8.18.122307.dev0

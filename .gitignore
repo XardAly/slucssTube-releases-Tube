@@ -1,0 +1,55 @@
+# --- Segredos: NUNCA versionar ---
+.env
+.env.local
+.env.*
+!.env.example
+!.env.local.example
+*.pem
+*.pfx
+*.key
+cookies.txt
+*_cookies.txt
+.devkeys/
+backend/.devkeys/
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+.pytest_cache/
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+*.tsbuildinfo
+npm-debug.log*
+
+# --- Artefatos de build do app desktop ---
+build/
+dist/
+*.spec.bak
+
+# --- Dados/artefatos de execução local (dev sem Docker) ---
+backend/.devdownloads/
+backend/*.log
+
+# --- Editor / SO ---
+.vscode/
+.idea/
+Thumbs.db
+
+# Release artifacts and private deployment bundles
+*.zip
+*.apk
+*.apk.idsig
+*.jks
+*.keystore
+*.dpapi
+*.log
+.devdownloads/
+android/.gradle/
+android/.kotlin/
+android/local.properties
+android/**/.cxx/

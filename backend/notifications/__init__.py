@@ -1,0 +1,1 @@
+"""Notificacoes externas do backend."""

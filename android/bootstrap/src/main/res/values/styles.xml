@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.SlucssInstaller" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#0B0B0E</item>
+        <item name="android:navigationBarColor">#0B0B0E</item>
+        <item name="android:windowBackground">#0B0B0E</item>
+        <item name="android:colorAccent">#E50914</item>
+    </style>
+</resources>

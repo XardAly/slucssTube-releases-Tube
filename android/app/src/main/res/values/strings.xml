@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Slucss System</string>
+    <string name="notification_channel_downloads">Downloads</string>
+    <string name="notification_channel_updates">Atualizações</string>
+    <string name="paste">Colar</string>
+</resources>

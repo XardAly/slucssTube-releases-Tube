@@ -1,0 +1,184 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "7ce0f11e4cd3dfdb90da221f0c690127",
+    "entities": [
+      {
+        "tableName": "download_jobs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `type` TEXT NOT NULL, `url` TEXT, `sourceUri` TEXT, `title` TEXT NOT NULL, `mode` TEXT NOT NULL, `height` INTEGER, `videoFormat` TEXT NOT NULL, `audioFormat` TEXT NOT NULL, `optionsJson` TEXT, `operationId` TEXT NOT NULL, `status` TEXT NOT NULL, `stage` TEXT NOT NULL, `progress` REAL NOT NULL, `downloadedBytes` INTEGER NOT NULL, `totalBytes` INTEGER NOT NULL, `speedBytes` INTEGER NOT NULL, `etaSeconds` INTEGER NOT NULL, `message` TEXT NOT NULL, `outputUri` TEXT, `outputMime` TEXT, `outputName` TEXT, `error` TEXT, `fallbackEligible` INTEGER NOT NULL, `createdAt` INTEGER NOT NULL, `updatedAt` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sourceUri",
+            "columnName": "sourceUri",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mode",
+            "columnName": "mode",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "height",
+            "columnName": "height",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "videoFormat",
+            "columnName": "videoFormat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "audioFormat",
+            "columnName": "audioFormat",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "optionsJson",
+            "columnName": "optionsJson",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "operationId",
+            "columnName": "operationId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stage",
+            "columnName": "stage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "progress",
+            "columnName": "progress",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "downloadedBytes",
+            "columnName": "downloadedBytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "totalBytes",
+            "columnName": "totalBytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "speedBytes",
+            "columnName": "speedBytes",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "etaSeconds",
+            "columnName": "etaSeconds",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "message",
+            "columnName": "message",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outputUri",
+            "columnName": "outputUri",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "outputMime",
+            "columnName": "outputMime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "outputName",
+            "columnName": "outputName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "error",
+            "columnName": "error",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fallbackEligible",
+            "columnName": "fallbackEligible",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "createdAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updatedAt",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '7ce0f11e4cd3dfdb90da221f0c690127')"
+    ]
+  }
+}

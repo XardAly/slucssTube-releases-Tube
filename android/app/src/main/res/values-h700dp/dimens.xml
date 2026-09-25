@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="studio_hero_height">184dp</dimen>
+    <dimen name="studio_page_top">24dp</dimen>
+</resources>

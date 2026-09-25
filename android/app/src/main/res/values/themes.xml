@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="Theme.Slucss" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">@color/red_highlight</item>
+        <item name="colorPrimaryVariant">@color/red_pressed</item>
+        <item name="colorSecondary">@color/red_highlight</item>
+        <item name="colorSecondaryContainer">@color/red_soft</item>
+        <item name="colorOnSecondaryContainer">@color/red_highlight</item>
+        <item name="colorOnPrimary">@color/black_deep</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="fontFamily">sans</item>
+        <item name="android:windowBackground">@color/black_deep</item>
+        <item name="android:navigationBarColor">@color/black_deep</item>
+        <item name="android:statusBarColor">@color/black_deep</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Slucss.AlertDialog</item>
+    </style>
+    <style name="ThemeOverlay.Slucss.AlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/surface_elevated</item>
+    </style>
+    <style name="Widget.Slucss.PrimaryButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">54dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="backgroundTint">@color/primary_button_background</item>
+        <item name="iconTint">@color/primary_button_text</item>
+        <item name="android:textColor">@color/primary_button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="iconSize">20dp</item>
+    </style>
+    <style name="Widget.Slucss.SecondaryButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">52dp</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:letterSpacing">0</item>
+        <item name="iconSize">20dp</item>
+    </style>
+    <style name="Widget.Slucss.Filter" parent="Widget.Material3.Chip.Filter">
+        <item name="chipSurfaceColor">@android:color/transparent</item>
+        <item name="chipBackgroundColor">@color/filter_background</item>
+        <item name="chipStrokeWidth">0dp</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="android:textColor">@color/filter_text</item>
+        <item name="chipStartPadding">6dp</item>
+        <item name="chipEndPadding">6dp</item>
+        <item name="textStartPadding">6dp</item>
+        <item name="textEndPadding">6dp</item>
+        <item name="ensureMinTouchTargetSize">true</item>
+        <item name="chipMinTouchTargetSize">48dp</item>
+        <item name="chipCornerRadius">10dp</item>
+    </style>
+    <style name="Widget.Slucss.FileButton" parent="Widget.Slucss.SecondaryButton">
+        <item name="backgroundTint">@color/surface</item>
+        <item name="strokeColor">@color/border</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="TextAppearance.Slucss.Navigation" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:letterSpacing">0</item>
+    </style>
+    <style name="TextAppearance.Slucss.Navigation.Active" parent="TextAppearance.Slucss.Navigation">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Widget.Slucss.NavigationIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:width">56dp</item>
+        <item name="android:height">32dp</item>
+        <item name="android:color">@color/red_soft</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Slucss.NavigationIndicator</item>
+    </style>
+    <style name="ShapeAppearance.Slucss.NavigationIndicator" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">10dp</item>
+    </style>
+</resources>

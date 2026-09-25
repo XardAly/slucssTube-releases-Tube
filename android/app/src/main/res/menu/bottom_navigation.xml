@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigationDownload" android:icon="@drawable/ic_nav_download" android:title="Baixar" />
+    <item android:id="@+id/navigationGif" android:icon="@drawable/ic_nav_gif" android:title="GIF" />
+    <item android:id="@+id/navigationCompatibility" android:icon="@drawable/ic_nav_convert" android:title="Converter" />
+    <item android:id="@+id/navigationUpscale" android:icon="@drawable/ic_nav_upscale" android:title="Upscale" />
+    <item android:id="@+id/navigationQueue" android:icon="@drawable/ic_nav_queue" android:title="Fila" />
+</menu>

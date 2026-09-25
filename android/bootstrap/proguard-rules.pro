@@ -1,0 +1,3 @@
+-dontobfuscate
+-keep class net.i2p.crypto.eddsa.** { *; }
+-dontwarn sun.security.x509.X509Key

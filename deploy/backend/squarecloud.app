@@ -1,0 +1,5 @@
+DISPLAY_NAME=SLUCSS YT SYSTEM API
+MAIN=main.py
+VERSION=recommended
+MEMORY=1024
+SUBDOMAIN=slucssytapinevey

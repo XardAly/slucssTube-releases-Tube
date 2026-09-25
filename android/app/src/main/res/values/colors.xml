@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <color name="black_deep">#101012</color>
+    <color name="black_bottom">#101012</color>
+    <color name="surface">#19191C</color>
+    <color name="surface_alt">#19191C</color>
+    <color name="surface_elevated">#252528</color>
+    <color name="red_brand">#CF243B</color>
+    <color name="red_pressed">#B81C32</color>
+    <color name="red_soft">#33E52943</color>
+    <color name="text_primary">#F2F2F3</color>
+    <color name="text_secondary">#B9B9BF</color>
+    <color name="text_muted">#96969F</color>
+    <color name="border">#36363C</color>
+    <color name="success">#4FBF67</color>
+    <color name="red_highlight">#FF7185</color>
+    <color name="warning">#F1BD70</color>
+</resources>
